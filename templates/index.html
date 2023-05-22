@@ -1,0 +1,21 @@
+{{ define "index" }}
+
+{{ template "header" }}
+
+<main role="main" class="px-3">
+  <h1 class="cover-heading" >Главная страница.</h1>
+  
+  {{ range . }}
+    <div class="alert alert-danger">
+      <h2 class="cover-heading" >{{ .Title }}</h2>
+      <p class="lead">{{ .Anons }}</p>
+      <!-- <button type="submit">Читать далее</button> -->
+      <a href="post/{{ .Id }}" class="btn btn-danger">Читать далее</a>
+    </div>
+  {{ end }}
+  
+</main>
+
+{{ template "footer" }}
+
+{{ end }}
