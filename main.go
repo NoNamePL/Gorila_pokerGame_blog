@@ -147,7 +147,6 @@ func handleRequest() {
 
 func main() {
 	handleRequest()
-
 	/*
 		//_, err = db.Exec(fmt.Sprintf("INSERT INTO 'articles' VALUES (DEFAULT,'%s','%s','%s')", title, anons, fullText))
 		insert, err := db.Query(fmt.Sprintf(`INSERT INTO articles VALUES (DEFAULT,'%s','%s','%s')`, title, anons, fullText))
@@ -156,7 +155,6 @@ func main() {
 		}
 		defer insert.Close()
 	*/
-
 	// выборка данных
 	/*
 		res, err := db.Query(`SELECT * FROM "users"`)
